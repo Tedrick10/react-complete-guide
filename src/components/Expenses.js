@@ -2,6 +2,7 @@
 import React from "react";
 
 // Components
+import Card from "./Card";
 import ExpenseItem from "./ExpenseItem";
 
 // CSS
@@ -11,11 +12,11 @@ import "./Expenses.css";
 const Expenses = (props) => {
   // Returning JSX Components
   return (
-    <div className="expenses">
+    <Card className="expenses">
       {props.items.map((item) => (
         <ExpenseItem date={item.date} name={item.title} price={item.amount} />
       ))}
-    </div>
+    </Card>
   );
 };
 

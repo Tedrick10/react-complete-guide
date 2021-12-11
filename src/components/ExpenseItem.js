@@ -2,6 +2,7 @@
 import React from "react";
 
 // Components
+import Card from "./Card";
 import ExpenseDate from "./ExpenseDate";
 
 // CSS
@@ -16,13 +17,13 @@ const ExpenseItem = (props) => {
 
   // Returning JSX Components
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <ExpenseDate date={expenseDate} />
       <div className="expense-item__description">
         <h2>{expenseName}</h2>
         <div className="expense-item__price">${expensePrice}</div>
       </div>
-    </div>
+    </Card>
   );
 };
 

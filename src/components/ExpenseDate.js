@@ -1,6 +1,9 @@
 // React: Existing Libraries
 import React from "react";
 
+// Components
+import Card from "./Card";
+
 // CSS
 import "./ExpenseDate.css";
 
@@ -13,11 +16,11 @@ const ExpenseDate = (props) => {
 
   // Returning JSX Components
   return (
-    <div className="expense-date">
+    <Card className="expense-date">
       <div className="expense-date__month">{month}</div>
       <div className="expense-date__year">{year}</div>
       <div className="expense-date__day">{day}</div>
-    </div>
+    </Card>
   );
 };
 
